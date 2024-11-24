@@ -1,7 +1,8 @@
-*,html {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth!important;
 }
 
 body {
@@ -14,10 +15,12 @@ nav {
     display: flex;
     padding: 0px 50px;
     justify-content: space-between;
-    background-color: rgba(39, 163, 245, 0.377);
+    background-color: transparent;
     align-items: center;
     width: 100%;
     overflow-x: hidden;
+    z-index: 10;
+    backdrop-filter: blur(10px);
 }
 
 .navbar a {
@@ -38,6 +41,7 @@ nav {
   gap: 50px ;
   backdrop-filter: blur(10px);
   transition: 0.3 ease;
+  z-index: 10;
 }
 
 .sidebar {
@@ -50,7 +54,6 @@ nav {
   height: 1000%;
   left: 0;
   padding-right: 100px;
-  
 }
 
 .banyak a {
@@ -595,4 +598,3 @@ nav {
     margin: 10px;
   }
 }
-
